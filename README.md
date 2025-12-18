@@ -1,65 +1,10 @@
-Image Captioning is a key problem in Computer Vision and Natural Language Processing (NLP) where the goal is to automatically generate meaningful textual descriptions for images.
-This project presents an AI-based Image Captioning system that combines ResNet50 for image feature extraction and LSTM (Long Short-Term Memory) networks for sequence generation.
+# Image-Captioning-using-ResNet50-and-LSTM
 
-The model is trained and evaluated on the Flickr8k dataset and uses Beam Search with a penalty mechanism to improve caption diversity and handle rare words effectively.
+Image captioning, a challenging task in computer vision and natural language processing, involves creating natural language descriptions of pictures. Despite significant improvements in recent years, there are still challenges in picture captioning, such as handling specialized terminology, creating distinctive and creative captions, and overcoming long-term dependencies. By merging the LSTM model with image features retrieved from the ResNet50 model, we provide a novel approach for captioning pictures in this study that gets around these issues. We employ an LSTM to create captions based on the attributes that ResNet50 has extracted from the input image. We use a beam search method with a penalty term for creating unusual words to address the problem of rare words. We test our methodology using the Flickr8k dataset, and our model surpasses cutting-edge techniques in terms of caption quality and variety. Our method has applications in image retrieval, visual question answering, and picture captioning, among other areas. Overall, our approach offers a viable path forward for developing AI-based Image captioning.
 
- Key Features
 
-Uses ResNet50 (pre-trained on ImageNet) for robust image feature extraction
 
-Employs LSTM-based language modeling for caption generation
 
-Implements Beam Search for better sentence quality
+Dataset used: Flickr8k
 
-Penalizes rare/unusual words to improve caption fluency
-
-Evaluated on the Flickr8k dataset
-
-Produces more accurate, diverse, and natural captions
-
-Model Architecture
-
-Image Encoder
-
-ResNet50 CNN
-
-Extracts high-level visual features from images
-
-Caption Decoder
-
-LSTM network
-
-Generates captions word-by-word using extracted features
-
-Caption Generation
-
-Beam Search algorithm
-
-Rare-word penalty for improved diversity
-
-Dataset
-
-Dataset Name: Flickr8k
-
-Description: Contains 8,000 images, each with 5 human-annotated captions
-
-Source: Kaggle
-
- Dataset Link:
-https://www.kaggle.com/datasets/adityajn105/flickr8k
-
- Technologies Used
-
-Python
-
-TensorFlow / Keras
-
-NumPy
-
-Matplotlib
-
-ResNet50 (CNN)
-
-LSTM (RNN)
-
-Jupyter Notebook
+Link: https://www.kaggle.com/datasets/adityajn105/flickr8k
